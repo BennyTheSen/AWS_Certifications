@@ -1,0 +1,11 @@
+# List all buckets
+aws s3 List
+# List all folders and objects in buckets
+aws s3 ls <bucketname>
+# Download object froim bucket to local
+aws s3 cp <objectpath> <local path>
+# Upload object from local to bucket
+aws s3 cp <local path> <objectpath>
+# Create presigned url 
+aws s3 presign <objectpath> --expires-in <time in seconds>
+
